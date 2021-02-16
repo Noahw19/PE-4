@@ -1,0 +1,104 @@
+ | | 
+-----
+ | | 
+-----
+ | | 
+
+Player 1's turn: 
+Please enter in the x coordinate of selection:
+1
+Please enter in the y coordinate of selection:
+1
+ | | 
+-----
+ |O| 
+-----
+ | | 
+
+Player 2's turn: 
+Please enter in the x coordinate of selection:
+2  
+Please enter in the y coordinate of selection:
+2
+ | | 
+-----
+ |O| 
+-----
+ | |X
+
+Player 1's turn: 
+Please enter in the x coordinate of selection:
+0
+Please enter in the y coordinate of selection:
+0
+O| | 
+-----
+ |O| 
+-----
+ | |X
+
+Player 2's turn: 
+Please enter in the x coordinate of selection:
+0
+Please enter in the y coordinate of selection:
+1
+O|X| 
+-----
+ |O| 
+-----
+ | |X
+
+Player 1's turn: 
+Please enter in the x coordinate of selection:
+0
+Please enter in the y coordinate of selection:
+2
+O|X|O
+-----
+ |O| 
+-----
+ | |X
+
+Player 2's turn: 
+Please enter in the x coordinate of selection:
+1
+Please enter in the y coordinate of selection:
+0
+O|X|O
+-----
+X|O| 
+-----
+ | |X
+
+Player 1's turn: 
+Please enter in the x coordinate of selection:
+2
+Please enter in the y coordinate of selection:
+0
+O|X|O
+-----
+X|O| 
+-----
+O| |X
+
+Player 2's turn: 
+Please enter in the x coordinate of selection:
+1
+Please enter in the y coordinate of selection:
+2
+O|X|O
+-----
+X|O|X
+-----
+O| |X
+
+Player 1's turn: 
+Please enter in the x coordinate of selection:
+2
+Please enter in the y coordinate of selection:
+1
+O|X|O
+-----
+X|O|X
+-----
+O|O|X

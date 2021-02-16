@@ -41,6 +41,16 @@ void DisplayBoard(int **arr)
   }
 }
 
+
+void PlaceMarker(int arr[2], int** Board, int marker)
+{
+  if(Board[arr[0]][arr[1]] == -1)
+  {
+    Board[arr[0]][arr[1]] = marker;
+  }
+}
+
+
 int* GetPlayerChoice()
 {
   int x,y;
@@ -62,7 +72,6 @@ void PlaceMarker(int arr[2], int** Board, int marker)
     Board[arr[0]][arr[1]] = marker;
   }
 }
-
 
 int main()
 {
