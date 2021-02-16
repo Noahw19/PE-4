@@ -65,11 +65,41 @@ int* GetPlayerChoice()
   return arr;
 }
 
+void PlaceMarker(int arr[2], int** Board, int marker)
+{
+  if(Board[arr[0]][arr[1]] == -1)
+  {
+    Board[arr[0]][arr[1]] = marker;
+  }
+}
 
 int main()
 {
   int **arr_ = CreateBoard();
-  int *choices = GetPlayerChoice();
+  //int *choices = GetPlayerChoice();
+  //PlaceMarker(choices, arr_, 1);
   DisplayBoard(arr_);
+
+  int turnCount = 1;
+  int turnMax = 9;
+  bool running = true;
+  int currentPlayer = 1;
+
+  while(running){
+    std::cout << "Player " << currentPlayer << "'s turn: " << std::endl;
+    int *choices = GetPlayerChoice();
+    PlaceMarker(choices, arr_, currentPlayer - 1);
+    DisplayBoard(arr_);
+
+    if (turnCount == turnMax){
+      running = false;
+    }
+    turnCount += 1;
+    if (currentPlayer == 1){
+      currentPlayer = 2;
+    } else {
+      currentPlayer = 1;
+    }
+  }
 
 }
