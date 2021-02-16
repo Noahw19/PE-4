@@ -48,9 +48,11 @@ int* GetPlayerChoice()
   std::cin >> x;
   std::cout << "Please enter in the y coordinate of selection:" << std::endl;
   std::cin >> y;
-  int arr[2];
+  int *arr = 0;
+  arr = new int[2];
   arr[0] = x;
   arr[1] = y;
+  return arr;
 }
 
 
@@ -59,7 +61,6 @@ int main()
 {
   int **arr_ = CreateBoard();
   int *choices = GetPlayerChoice();
-
   DisplayBoard(arr_);
 
 }
