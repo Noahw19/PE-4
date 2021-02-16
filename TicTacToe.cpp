@@ -19,32 +19,25 @@ int** CreateBoard()
 
 void DisplayBoard(int **arr)
 {
-  for (int x = 0; x < 3; x++)
-  {
-    for (int y = 0; y < 3; y++)
-    {
-      if (arr[x][y] == 0)
-      {
+  for (int x = 0; x < 3; x++){
+    for (int y = 0; y < 3; y++){
+      if (arr[x][y] == 0){
         std::cout << "O";
-      } 
-      else if (arr[x][y] == 1)
-      {
+      } else if (arr[x][y] == 1){
         std::cout << "X";
-      } 
-      else 
-      {
-        std::cout << "T";
+      } else {
+        std::cout << " ";
       }
-      if (y != 2)
-      {
+      if (y != 2){
         std::cout << "|";
       }
     }
     std::cout << "" << std::endl;
-    if (x != 2)
-    {
-      std::cout << "--------";
+    if (x != 2){
+      std::cout << "-----";
     }
+    std::cout << "" << std::endl;
+
   }
 }
 
